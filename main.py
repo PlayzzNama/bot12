@@ -14,7 +14,7 @@ app = FastAPI()
 # Дозволити запити з фронтенду Mini App
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # заміни на домен Mini App для безпеки
+    allow_origins=["https://matches12.netlify.app/"],  # заміни на домен Mini App для безпеки
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
